@@ -1,0 +1,47 @@
+main div.container {
+    margin-top: 100px;
+}
+
+main div.container h1 {
+    text-align: center;
+    color: rgb(189, 165, 46);
+    font-size: 44px;
+}
+
+main div.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main div.books div.book-block {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+main div.books div.book-block:hover > img.book-cover {
+    filter: brightness(0.5);
+}
+
+main div.books div.book-block:hover > p {
+    color: rgb(189, 165, 46);
+}
+
+main div.books div.book-block img.book-cover {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+main div.books div.book-block p {
+    font-size: 24px;
+}
+
+main div.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

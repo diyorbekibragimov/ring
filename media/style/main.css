@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+header {
+    padding: 10px;
+    background: rgba(33, 33, 33, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 32px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+header img.logo {
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    animation-name: title-hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+header h1 a:hover {
+    animation-duration: 0s;
+    color: white;
+}
+
+@keyframes title-hover {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: rgb(189 165 46);
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+main div.poster {
+    position: relative;
+}
+
+main div.poster img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5);
+}
+
+main div.poster h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@media (max-width: 480px) {
+    main div.poster {
+        display: none;
+    }
+}
